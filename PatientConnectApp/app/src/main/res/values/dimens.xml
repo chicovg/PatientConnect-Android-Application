@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+
+    <dimen name="card_margin">6dp</dimen>
+    <dimen name="card_margin_bottom">2dp</dimen>
+    <dimen name="card_padding">6dp</dimen>
+
+    <dimen name="dashboard_panel_width">300dp</dimen>
+    <dimen name="login_fields_width">300dp</dimen>
+</resources>

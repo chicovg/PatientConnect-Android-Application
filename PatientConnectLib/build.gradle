@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+    maven { url "http://maven.springframework.org/milestone" }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'com.chicovg.symptommgmt'
+            artifactId 'SymptomMgmtLib'
+            version '0.1.0-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
+dependencies {
+    compile("com.squareup.retrofit:retrofit:1.6.0")
+    compile("com.fasterxml.jackson.core:jackson-annotations:2.3.0")
+
+}

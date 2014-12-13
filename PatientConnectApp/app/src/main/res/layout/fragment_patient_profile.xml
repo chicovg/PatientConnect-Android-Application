@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chicovg.symptommgmt.PatientProfileFragment">
+
+    <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp" android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp" android:layout_marginBottom="2dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="2dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/username_label"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:labelFor="@id/username"
+                          android:text="@string/username_label"
+                          style="@android:style/TextAppearance.Material.Title"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="horizontal" android:weightSum="2">
+                <TextView android:id="@+id/firstName_label"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:labelFor="@id/firstName"
+                          android:text="@string/first_name_label"
+                          style="@android:style/TextAppearance.Material.Title" android:layout_weight="1"/>
+                <TextView android:id="@+id/lastName_label"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:labelFor="@id/lastName"
+                          android:text="@string/last_name_label"
+                          style="@android:style/TextAppearance.Material.Title" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:weightSum="2">
+                <TextView
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:weightSum="2" android:transitionGroup="true" android:layout_height="wrap_content"
+                          android:layout_width="match_parent">
+                <TextView android:id="@+id/dateOfBirth_label"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:labelFor="@id/firstName"
+                          android:text="@string/date_of_birth_label"
+                          style="@android:style/TextAppearance.Material.Title" android:layout_weight="1"/>
+                <TextView android:id="@+id/phone_label"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:labelFor="@id/lastName"
+                          android:text="@string/phone_number_label"
+                          style="@android:style/TextAppearance.Material.Title" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:weightSum="2" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/dateOfBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:id="@+id/email_label"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:labelFor="@id/lastName"
+                          android:text="@string/email_address_label"
+                          style="@android:style/TextAppearance.Material.Title"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+                <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Button
+                        android:id="@+id/editButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/edit_profile_label"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp" android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp" android:layout_marginBottom="2dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="2dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+            <TextView
+                    android:id="@+id/remindersTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reminders_title"
+                    style="@android:style/TextAppearance.Material.Title"/>
+            <TextView
+                    android:id="@+id/reminderInstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reminders_list_instructions"
+                    style="@android:style/TextAppearance.Material.Caption"/>
+            <ListView android:id="@+id/reminders"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

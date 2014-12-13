@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Patient Connect</string>
+    <string name="title_activity_patient_dashboard">PatientDashboard</string>
+    <string name="title_activity_doctor_dashboard">DoctorDashboard</string>
+
+    <!-- Error Messages -->
+    <string name="error_login_failed">Login Failed</string>
+    <string name="error_login_no_connection">Login Failed - No Internet Connection!</string>
+    <string name="error_no_connection">No Internet Connection! please connect and try again!</string>
+    <string name="error_save_failed">A system error occurred, please try again!</string>
+
+    <!-- Extras -->
+    <string name="ACTION_EXTRA">ACTION</string>
+    <string name="HTTP_STATUS_EXTRA">STATUS</string>
+    <string name="HTTP_FAILURE_REASON_EXTRA">REASON</string>
+    <string name="HTTP_RESPONSE_ENTITY_EXTRA">RESPONSE_ENTITY</string>
+    <string name="USER_EXTRA">USER</string>
+    <string name="PATIENT_EXTRA">PATIENT</string>
+    <string name="PATIENT_ID_EXTRA">PATIENT_ID</string>
+    <string name="DOCTOR_EXTRA">DOCTOR</string>
+    <string name="DOCTOR_ID_EXTRA">DOCTOR_ID</string>
+
+    <!-- Labels -->
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="patient_dashboard">Dashboard</string>
+    <string name="patient_profile">Profile</string>
+    <string name="welcome">Welcome to Patient Connect!</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="how_are_you_text">How are you feeling?</string>
+    <string name="check_in_history_title">Your Check In History</string>
+    <string name="check_in_button_label">Check In!</string>
+    <string name="points_earned_label">Points Earned</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upcoming_check_ins_title">Upcoming Check-Ins</string>
+    <string name="recent_check_ins_title">Recent Check-Ins</string>
+    <string name="check_in_dialog_title">Please answer the following questions</string>
+    <string name="check_in_question_1">How bad is your mouth pain/sore throat?</string>
+    <string name="check_in_question_2">Did you take your pain medication?</string>
+    <string name="check_in_question_3">Did you take your %s?</string>
+    <string name="check_in_question_3_med_taken" formatted="false">When did you take your %s?</string>
+    <string name="check_in_question_4">Does your pain stop you from eating/drinking?</string>
+    <string name="response_well_controlled">well-controlled</string>
+    <string name="response_moderate">moderate</string>
+    <string name="response_severe">severe</string>
+    <string name="response_yes">yes</string>
+    <string name="response_no">no</string>
+    <string name="response_some">some</string>
+    <string name="response_i_can_eat">I can\'t eat</string>
+    <string name="title_activity_patient_profile">PatientProfile</string>
+    <string name="ok">OK</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_password_label">Save password?</string>
+    <string name="please_login_label">Please enter your username and password…</string>
+    <string name="title_activity_doctor_profile">DoctorProfile</string>
+    <string name="doctor_profile">Profile</string>
+    <string name="username_label">Username</string>
+    <string name="first_name_label">First Name</string>
+    <string name="last_name_label">Last Name</string>
+    <string name="email_address_label">Email Address</string>
+    <string name="phone_number_label">Phone Number</string>
+    <string name="title_activity_patient_detail">PatientDetail</string>
+    <string name="title_patient_dashboard_tab">Dashboard</string>
+    <string name="title_patient_profile_tab">Profile</string>
+    <string name="title_patient_medications_tab">Medications</string>
+    <string name="title_patient_check_ins_tab">Check Ins</string>
+    <string name="hour_label">Hour:</string>
+    <string name="minute_label">Minute:</string>
+    <string name="date_of_birth_label">Date of Birth</string>
+    <string name="total_check_ins_label">Total Check-Ins</string>
+    <string name="edit_profile_label">Edit Profile</string>
+    <string name="date_taken_hint">Date</string>
+    <string name="time_taken_hint">Time</string>
+    <string name="dosage_label">Dosage</string>
+    <string name="instructions_label">Instructions</string>
+    <string name="date_and_time_label">Date and Time</string>
+    <string name="pain_level_label">Pain Level</string>
+    <string name="edit_profile_title">Edit your profile</string>
+    <string name="check_in_detail_dialog_title">Check-In Responses</string>
+    <string name="reminders_title">Check-In Reminder Times</string>
+    <string name="reminders_list_instructions">Click to Edit…</string>
+    <string name="title_activity_patient_check_in_search">PatientCheckInSearch</string>
+    <string name="check_in_query_hint">Search First/Last Name</string>
+    <string name="action_check_in_search">Search Check-In Data</string>
+    <string name="check_in_timestamp_label">Date and Time:</string>
+    <string name="pain_level_reported_label">Pain Level:</string>
+    <string name="last_reported_summary" formatted="false">Last Report: %s</string>
+    <string name="reported_since_summary" formatted="false">%s pain since %s (%d hrs)</string>
+    <string name="patient_has_not_reported">Patient has not yet reported</string>
+    <string name="medication_options_title">Medication Options</string>
+    <string name="title_edit">Edit</string>
+    <string name="title_delete">Delete</string>
+    <string name="title_add_new">Add New</string>
+    <string name="delete_confirmation_message">This item will be removed from the system.</string>
+    <string name="title_are_you_sure">Are you sure?</string>
+    <string name="confirm_delete_label">Yes, delete it.</string>
+    <string name="cancel_delete_title">No, take me back</string>
+    <string name="title_edit_medication_record">Edit this medication record</string>
+    <string name="title_new_medication_record">Enter a new medication record</string>
+    <string name="medication_name_label">Medication Name</string>
+    <string name="error_required_field" formatted="false">%s is required!</string>
+    <string name="alert_notification_title">Patient Connect ALERT!</string>
+    <string name="severe_12hr_alert_notification_text" formatted="false">Your patient, %s has reported SEVERE pain for the last 12 hours!</string>
+    <string name="severe_mod_16hr_alert_notification_text" formatted="false">Your patient, %s has reported SEVERE or MODERATE pain for the last 16 hours!</string>
+    <string name="cannot_eat_12hr_alert_notification_text" formatted="false">Your patient, %s has reported the inability to eat for the last 12 hours!</string>
+    <string name="check_in_notification_title">Patient Connect Reminder</string>
+    <string name="check_in_notification_text">It\'s time to check in!</string>
+    <string name="check_in_title_template" formatted="false">%s %s\'s Check-Ins</string>
+</resources>

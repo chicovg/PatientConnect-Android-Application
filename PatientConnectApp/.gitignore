@@ -1,0 +1,12 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
+/build
+
+SymptomMgmtApp.iml
+SymptomMgmtApp.iws
+SymptomMgmtApp.ipr
+SymptomManagement.iml
+mycert.pem
+PatientConnectApp.iml

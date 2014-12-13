@@ -1,0 +1,59 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "http://repo.spring.io/libs-snapshot" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.8.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin:'application'
+
+mainClassName = "com.chicovg.symptommgmt.Application"
+
+jar {
+    baseName = 'gs-spring-boot'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+    maven { url "http://maven.springframework.org/milestone" }
+}
+
+dependencies {
+    // tag::jetty[]
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-tomcat")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("mysql:mysql-connector-java:5.1.6")
+
+    compile("org.apache.httpcomponents:httpclient:4.3.4")
+
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile("org.springframework.security.oauth:spring-security-oauth2:2.0.0.RC2")
+    compile("org.springframework.security.oauth:spring-security-oauth2-javaconfig:1.0.0.M1")
+
+    compile('joda-time:joda-time:2.5')
+
+    compile("com.chicovg.symptommgmt:SymptomMgmtLib:0.1.0-SNAPSHOT")
+
+    testCompile("org.mockito:mockito-all:1.9.5")
+    testCompile("org.powermock:powermock-mockito-release-full:1.4.9")
+    testCompile("com.jayway.jsonpath:json-path-assert:0.8.1")
+    testCompile("org.springframework:spring-test:3.2.3.RELEASE")
+    testCompile("junit:junit")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}

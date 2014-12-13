@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="symptommgmt.chicovg.com.symptommanagement.DoctorDashboard" >
+
+    <item android:id="@+id/action_search"
+          android:title="@string/action_check_in_search"
+          android:showAsAction="never" />
+
+    <item android:id="@+id/action_logout"
+          android:title="@string/logout"
+          android:showAsAction="never" />
+
+</menu>

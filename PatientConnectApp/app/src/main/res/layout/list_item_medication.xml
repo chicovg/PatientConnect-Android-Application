@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin_bottom"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp"
+        android:foreground="?android:attr/selectableItemBackground">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:padding="6dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" >
+
+        <TextView android:id="@+id/medication_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:clickable="false"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false"
+                  style="@android:style/TextAppearance.Material.Title"/>
+
+        <TextView android:id="@+id/dosage_label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/medication_name"
+                  android:layout_marginRight="4dp"
+                  android:layout_alignParentLeft="true"
+                  android:text="@string/dosage_label"
+                  style="@android:style/TextAppearance.Material.Body2"
+                  android:clickable="false"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false" />
+
+        <TextView android:id="@+id/dosage"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/medication_name"
+                  android:layout_toRightOf="@+id/dosage_label"
+                  android:clickable="false"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false" />
+
+        <TextView android:id="@+id/instructions_label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/dosage_label"
+                  android:layout_marginRight="4dp"
+                  android:layout_alignParentLeft="true" android:text="@string/instructions_label"
+                  style="@android:style/TextAppearance.Material.Body2"
+                  android:clickable="false"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false" />
+
+        <TextView android:id="@+id/instructions"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/dosage"
+                  android:layout_toRightOf="@+id/instructions_label"
+                  android:clickable="false"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

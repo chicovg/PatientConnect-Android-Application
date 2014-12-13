@@ -1,0 +1,9 @@
+# Created by .gitignore support plugin (hsz.mobi)
+SymptomMgmt.iml
+SymptomMgmt.iws
+SymptomMgmt.ipr
+.idea
+.gradle
+build
+out
+PatientConnectServices.iml

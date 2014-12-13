@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp" android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+        <TextView android:id="@+id/patient_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  style="@android:style/TextAppearance.Material.Title"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentLeft="true"/>
+        <TextView android:id="@+id/timestamp_label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/check_in_timestamp_label"
+                  style="@android:style/TextAppearance.Material.Body2"
+                  android:labelFor="@+id/timestamp"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@+id/patient_name"/>
+        <TextView android:id="@+id/timestamp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@+id/timestamp_label"/>
+        <TextView android:id="@+id/pain_level_label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/pain_level_reported_label"
+                  style="@android:style/TextAppearance.Material.Body2"
+                  android:labelFor="@+id/timestamp"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@+id/patient_name"/>
+        <TextView android:id="@+id/pain_level"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@+id/pain_level_label"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

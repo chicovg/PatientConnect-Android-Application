@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chicovg.symptommgmt.ProfileEditDialogFragment">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="horizontal">
+            <TextView android:id="@+id/username_label"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:labelFor="@id/username"
+                      android:text="@string/username_label"
+                      style="@android:style/TextAppearance.Material.Title"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="horizontal">
+            <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="horizontal" android:weightSum="2">
+            <TextView android:id="@+id/firstName_label"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:labelFor="@id/firstName"
+                      android:text="@string/first_name_label"
+                      style="@android:style/TextAppearance.Material.Title" android:layout_weight="1"/>
+            <TextView android:id="@+id/lastName_label"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:labelFor="@id/lastName"
+                      android:text="@string/last_name_label"
+                      style="@android:style/TextAppearance.Material.Title" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="2">
+            <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:weightSum="2" android:layout_height="wrap_content"
+                      android:layout_width="match_parent">
+            <TextView android:id="@+id/dateOfBirth_label"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:labelFor="@id/firstName"
+                      android:text="@string/date_of_birth_label"
+                      style="@android:style/TextAppearance.Material.Title" android:layout_weight="1"/>
+            <TextView android:id="@+id/phone_label"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:labelFor="@id/lastName"
+                      android:text="@string/phone_number_label"
+                      style="@android:style/TextAppearance.Material.Title" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:weightSum="2" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <EditText
+                    android:id="@+id/dateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:inputType="date"/>
+            <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:inputType="phone"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <TextView android:id="@+id/email_label"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:labelFor="@id/lastName"
+                      android:text="@string/email_address_label"
+                      style="@android:style/TextAppearance.Material.Title"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+            <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="textEmailAddress"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
